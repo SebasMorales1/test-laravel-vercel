@@ -1,10 +1,17 @@
+@php
+use Illuminate\Support\Facades\Vite;
+@endphp
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Laravel deploy Vercel</title>
-  @vite('resources/css/app.css')
+  <!-- @vite('resources/css/app.css') -->
+  <style>
+    {!! Vite::content('resources/css/app.css') !!}
+  </style>
 </head>
 <body>
   <h1>Vercel God 😎</h1>
