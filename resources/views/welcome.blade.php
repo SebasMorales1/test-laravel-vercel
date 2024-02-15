@@ -8,10 +8,13 @@ use Illuminate\Support\Facades\Vite;
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Laravel deploy Vercel</title>
-  <!-- @vite('resources/css/app.css') -->
-  <style>
-    {!! Vite::content('resources/css/app.css') !!}
-  </style>
+  @production
+    <style>
+      {!! Vite::content('resources/css/app.css') !!}
+    </style>
+    @else
+      @vite('resources/css/app.css')
+  @endproduction
 </head>
 <body>
   <h1>Vercel God 😎</h1>
