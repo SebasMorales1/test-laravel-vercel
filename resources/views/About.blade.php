@@ -7,7 +7,7 @@ use Illuminate\Support\Facades\Vite;
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Laravel deploy Vercel</title>
+  <title>About</title>
   @production
     <style>
       {!! Vite::content('resources/css/app.css') !!}
@@ -17,10 +17,8 @@ use Illuminate\Support\Facades\Vite;
   @endproduction
 </head>
 <body>
-  <h1>Vercel God 😎</h1>
-  <p class="bg-purple-500 text-white text-3xl w-fit px-4">
-    Secrect: <span class="font-bold">{{ env('SECRET') }}</span>
-  </p>
-  <a href="/about" class="text-blue-700 underline">About</a>
+  <div class="size-16 bg-sky-600"></div>
+  <h1 class="text-red-950">About me pana</h1>
+  <a href="/" class="text-blue-700 underline">Home</a>
 </body>
 </html>
